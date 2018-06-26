@@ -14,7 +14,7 @@ $('img').load(function(){
 
 function pressIt(){
   $("input").keydown(function(){
-    if (key.which===71){
+    if (key.which==71){
       alert("You pressed 'G'!");
   }
     else {return}
