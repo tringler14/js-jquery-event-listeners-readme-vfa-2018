@@ -13,11 +13,12 @@ $('img').load(function(){
 }
 
 function pressIt(){
-  $("form").on('keydown', function(){
+  $("input").on('keydown', function(){
     if (key.which===71){
       alert("You pressed 'G'!");
-      return;
-  }})
+  }
+    else {return}
+  })
 }
 
 function submitIt(){
