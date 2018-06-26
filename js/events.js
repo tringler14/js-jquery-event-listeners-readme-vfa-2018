@@ -1,7 +1,34 @@
 //define functions here
 
-$(document).ready(function(){
+function getIt(){
+$('p').click(function(){
+  alert ("Hey!")
+})
+}
 
-// call functions here
+function frameIt(){
+$('img').load(function(){
+  $(this).addClass('tasty')
+})
+}
 
+function pressIt(){
+  $(document).on('keydown', function(){
+    if (key.which==71){
+      alert("You pressed 'G'!");
+  }})
+}
+
+function submitIt(){
+$(document).on('submit', function(){
+  alert ("Your form is going to be submitted now.")
+})  
+  
+}
+
+$(document).ready(function (){
+getIt();
+frameIt();
+pressIt();
+submitIt();
 });
